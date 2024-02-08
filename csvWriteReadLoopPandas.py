@@ -1,7 +1,7 @@
 import csv
 import pandas
 import statistics
-"""
+
 # Open and Create the file 
 csvfile = open("myfile3.csv", "w", newline='')
 print("File Created")
@@ -19,7 +19,7 @@ print("Data Created")
 csvfile.close()
 print("closed after created rows")
 
-
+"""
 # Open the file read it and print the first 2 rows
 csvfile = open("myfile3.csv","r", newline='')
 line = csvfile.readline()
@@ -47,10 +47,11 @@ print("closed append")
 ################## LOOP ########################
 ########################Loop thru file###################################
 #No need to close the file when using this "with open .....as csv file etc"
-
+"""
 #alternative way of looping thru file
 #dont have to know what length or number of records
 #dont have to close the file
+"""
 tot_temp = 0
 rec_ct = 0
 with open("myfile3.csv", "r", newline='') as csvfile:
@@ -66,6 +67,7 @@ with open("myfile3.csv", "r", newline='') as csvfile:
         #add code to count the records here
 avg_temp = tot_temp/rec_ct
 print("avg", avg_temp)
+"""
 """
 ################## PANDAS ########################
 # open the file and read it all into one variable
